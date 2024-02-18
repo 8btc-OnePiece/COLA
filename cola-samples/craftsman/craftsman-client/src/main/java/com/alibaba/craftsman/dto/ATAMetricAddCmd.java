@@ -3,8 +3,7 @@ package com.alibaba.craftsman.dto;
 import com.alibaba.craftsman.dto.clientobject.ATAMetricCO;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * ATAMetricAddCmd
