@@ -5,7 +5,7 @@
 
     <groupId>com.alibaba.cola</groupId>
     <artifactId>cola-framework-archetypes-parent</artifactId>
-    <version>4.4.0-SNAPSHOT</version>
+    <version>4.3.2-Onepiece-1.0-boot3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
@@ -58,7 +58,7 @@
     </modules>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -128,10 +128,18 @@
         </pluginManagement>
     </build>
 
+    <!-- deploy所需的仓库地址-->
     <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>nexus-releases</name>
+            <url>https://nexus.8btc-ops.com/repository/maven-releases/</url>
+        </repository>
+
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>nexus</id>
+            <name>nexus-snapshots</name>
+            <url>https://nexus.8btc-ops.com/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 

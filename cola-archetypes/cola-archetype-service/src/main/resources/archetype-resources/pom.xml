@@ -10,16 +10,15 @@
     <name>${artifactId}</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.deploy.skip>true</maven.deploy.skip>
 
-        <cola.components.version>4.4.0-SNAPSHOT</cola.components.version>
+        <cola.components.version>4.3.2-Onepiece-1.0-boot3-SNAPSHOT</cola.components.version>
 
-        <spring-boot.version>2.7.2</spring-boot.version>
-        <mybatis-starter.version>2.2.2</mybatis-starter.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
     </properties>
 
     <modules>
@@ -85,7 +84,7 @@
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-starter.version}</version>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <!--Validation API-->
